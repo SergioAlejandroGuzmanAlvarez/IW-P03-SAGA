@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Actualizar estudiante</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Número de control</ion-label>
+    <ion-input [(ngModel)]="selectedStudent.controlNumber" name="controlNumber"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input [(ngModel)]="selectedStudent.name" name="name"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="floating">Carrera</ion-label>
+    <ion-input [(ngModel)]="selectedStudent.career" name="career"></ion-input>
+  </ion-item>
+  
+
+  <ion-button expand="full" color="primary">Guardar cambios</ion-button>
+  <ion-button expand="full" color="danger" >Cancelar</ion-button>
+</ion-content>

@@ -5,6 +5,6 @@ export interface Student {
     age : number;
     nip: number;
     email: string;
-    carrer: string;
+    career: string;
     photo: string;
 }

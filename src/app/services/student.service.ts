@@ -11,7 +11,7 @@ export class StudentService {
       {
         controlNumber: "18401126",
         age: 38,
-        carrer: "ISC",
+        career: "ISC",
         curp: "GUAS000304HNTLZRA6",
         email: "sealguzmanal@ittepic.edu.mx",
         name: "Guzman Alvarez Sergio Alejandro",
@@ -28,7 +28,7 @@ export class StudentService {
     let student: Student= {
       controlNumber: "18401126",
       age: 23,
-      carrer: "ISC",
+      career: "ISC",
       curp: "GUAS000304HNTLZRA6",
       email: "sealguzmanal@ittepic.edu.mx",
       name: "Guzman Alvarez Sergio Alejandro",
@@ -56,5 +56,6 @@ export class StudentService {
   }//deleteStudent
   public updateStudent(pos: number, student: Student): Student[]{
     this.students[pos] = student; 
+    return this.students;
   }
 }
