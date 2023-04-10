@@ -16,7 +16,7 @@ export class StudentService {
         email: "sealguzmanal@ittepic.edu.mx",
         name: "Guzman Alvarez Sergio Alejandro",
         nip: 1409,
-        photo:"https://picsum.photos/200/300/?blur"
+        photo:"https://picsum.photos/600?random=1"
       }
     ];
   }
@@ -27,13 +27,13 @@ export class StudentService {
   public getStudentByControlNumber(cn: string){
     let student: Student= {
       controlNumber: "18401126",
-      age: 23,
-      career: "ISC",
-      curp: "GUAS000304HNTLZRA6",
-      email: "sealguzmanal@ittepic.edu.mx",
-      name: "Guzman Alvarez Sergio Alejandro",
-      nip: 1409,
-      photo:"https://picsum.photos/200/300/?blur"
+        age: 38,
+        career: "ISC",
+        curp: "GUAS000304HNTLZRA6",
+        email: "sealguzmanal@ittepic.edu.mx",
+        name: "Guzman Alvarez Sergio Alejandro",
+        nip: 1409,
+        photo:"https://picsum.photos/600?random=1"
     }
     this.students.forEach(element =>{
         if(element.controlNumber === cn)

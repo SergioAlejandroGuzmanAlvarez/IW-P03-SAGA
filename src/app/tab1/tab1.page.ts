@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { StudentService } from '../services/student.service';
 import { Student } from '../models/student';
 import { ModalController } from '@ionic/angular';
-import { UpdateStudentModalComponentPage } from '../update-student-modal-component/update-student-modal-component.page';
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -30,7 +29,7 @@ export class Tab1Page {
     }
     return this.students;
   }
-  async openUpdateModal(index: number, student: Student) {
+ /* async openUpdateModal(index: number, student: Student) {
     const modal = await this.modalController.create({
       component: UpdateStudentModalComponentPage, // Componente del modal de actualización
       componentProps: {
@@ -46,5 +45,5 @@ export class Tab1Page {
       this.students = this.studentService.getStudents();
       this.filteredStudents = this.students;
     }
-  }
+  }*/
 }

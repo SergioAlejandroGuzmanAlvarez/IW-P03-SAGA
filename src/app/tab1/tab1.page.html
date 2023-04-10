@@ -11,20 +11,24 @@
   
   <ion-grid>
     <ion-row>
+      <ion-col class="color1">Photo</ion-col>
       <ion-col class="color1">Control Number</ion-col>
       <ion-col class="color1">Name</ion-col>
-      <ion-col class="color1">Career</ion-col>
+      <ion-col class="color1">Carrer</ion-col>
+      <ion-col class="color1">CURP</ion-col>
       <ion-col class="color1">Actions</ion-col>
     </ion-row>
     <ion-row *ngFor="let s of filteredStudents; let i = index">
+      <ion-col><ion-avatar><img src="{{s.photo}}"></ion-avatar></ion-col>
       <ion-col class="color2">{{s.controlNumber}}</ion-col>
       <ion-col class="color2">{{s.name}}</ion-col>
       <ion-col class="color2">{{s.career}}</ion-col>
+      <ion-col class="color2">{{s.curp}}</ion-col>
       <ion-col class="color2">
-        <ion-button (click)="openUpdateModal(i,s)">
+        <ion-button color="dark" [routerLink]="['/tabs','tab3']" [queryParams]="{id: s.controlNumber}">
           <ion-icon name="create"></ion-icon>
         </ion-button>
-        <ion-button (click)="deleteStudent(i)">
+        <ion-button (click)="deleteStudent(i)" color="dark">
           <ion-icon name="trash"></ion-icon>
         </ion-button>
       </ion-col>
