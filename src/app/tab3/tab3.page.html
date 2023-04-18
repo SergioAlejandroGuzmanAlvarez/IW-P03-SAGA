@@ -1,33 +1,11 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Update Student
+      Tab 2
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
-    <ion-item>
-      <ion-label>Control Number:</ion-label>
-      <ion-input type="text" formControlName="controlNumber" disabled></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>Name:</ion-label>
-      <ion-input type="text" formControlName="name"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>Career:</ion-label>
-      <ion-input type="text" formControlName="career"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>CURP:</ion-label>
-      <ion-input type="text" formControlName="curp"></ion-input>
-    </ion-item>
-
-    <ion-button type="submit" [disabled]="!studentForm.valid">Update Student</ion-button>
-  </form>
+<ion-content>
+  
 </ion-content>
